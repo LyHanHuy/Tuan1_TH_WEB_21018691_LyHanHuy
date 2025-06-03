@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký Thông Tin Cá Nhân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Đăng Ký Thông Tin Cá Nhân</h2>
+
+    <form>
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="gender">Giới tính:</label>
+        <select id="gender" name="gender" required>
+        <option value="">Chọn giới tính</option>
+        <option value="male">Nam</option>
+        <option value="female">Nữ</option>
+        <option value="other">Khác</option>
+    </select>
+
+        <button type="submit">Gửi</button>
+    </form>
+
+</body>
+
+</html>
